@@ -1,29 +1,45 @@
-# Blog Deportivo - Proyecto
+# Blog Deportivo - Rutinas de Ejercicio
 
-Pequeña página estática de un blog personal sobre deporte. Incluye 5 rutinas con imágenes, búsqueda, favoritos (localStorage) y modo oscuro.
+Página web interactiva para visualizar y gestionar rutinas de ejercicio. Incluye búsqueda, favoritos y modo oscuro.
 
-Archivos:
+## Características
+
+- 5 rutinas de ejercicio predefinidas
+- Búsqueda en tiempo real
+- Sistema de favoritos con localStorage
+- Modo oscuro/claro
+- Diseño responsive
+- Animaciones suaves
+- Visualización de pasos detallados
+
+## Archivos del proyecto
+
 - `index.html` - Página principal
-- `css/styles.css` - Estilos
-- `js/script.js` - Lógica de renderizado e interactividad
+- `css/styles.css` - Estilos y animaciones
+- `js/script.js` - Lógica e interactividad
+- `assets/images/` - Imágenes de las rutinas
 
-Cómo ejecutar (Windows PowerShell):
+## Cómo ejecutar localmente
 
-1. Abrir PowerShell en la carpeta del proyecto:
+1. Clonar el repositorio:
+   ```bash
+   git clone https://github.com/philipp717/BLOCK-PERSONAL-RUTINADEPORTE.git
+   cd BLOCK-PERSONAL-RUTINADEPORTE
+   ```
 
-   cd C:\Users\marir\Desktop\BLOCK_PERSONAL
-
-2. Iniciar servidor HTTP local (requiere Python instalado):
-
+2. Iniciar un servidor local (requiere Python):
+   ```bash
    python -m http.server 8000
+   ```
 
-3. Abrir en el navegador: http://localhost:8000
+3. Abrir en el navegador:
+   ```
+   http://localhost:8000
+   ```
 
-Notas:
-- Las imágenes se cargan desde Unsplash. Si alguna no carga, revisa conexión a internet.
-- Favoritos y tema oscuro se guardan en localStorage del navegador.
+## Mejoras futuras
 
-Siguientes mejoras opcionales:
-- Añadir paginación y etiquetas (categorías).
-- Formularios para crear nuevas rutinas dinámicamente.
-- Soporte para compartir en redes y descarga de PDF.
+- Añadir paginación
+- Formulario para crear nuevas rutinas
+- Compartir en redes sociales
+- Exportar rutinas a PDF
