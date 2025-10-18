@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blog Deportivo - Rutinas</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="top-nav">
+      <div class="container">
+        <ul class="nav-links">
+          <li><a href="#rutinas" class="active">Rutinas</a></li>
+          <li><a href="#seccion-favoritos" class="scroll-to-favorites">Favoritos</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container header-content">
+      <h1>Blog Deportivo</h1>
+      <p class="tagline">Rutinas, consejos y motivación para mantenerte activo</p>
+      <div class="controls">
+        <div class="search-box">
+          <input id="search" type="search" placeholder="Buscar rutinas, intensidad o palabras clave...">
+          <span class="search-icon">🔍</span>
+        </div>
+        <button id="toggleTheme" aria-pressed="false" class="theme-toggle">
+          <span class="icon">🌙</span>
+          <span class="label">Modo oscuro</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro">
+      <div class="container">
+        <h2>Rutinas destacadas</h2>
+        <p>Explora rutinas breves y efectivas para distintas intensidades. Haz clic en "Ver pasos" para desplegar la secuencia y en el corazón para guardar como favorito.</p>
+      </div>
+    </section>
+
+    <section id="posts" class="posts">
+      <!-- Los posts se generarán dinámicamente -->
+    </section>
+
+    <section id="seccion-favoritos" class="favorites-section">
+      <div class="container">
+        <h2>Mis Rutinas Favoritas</h2>
+        <div id="favoritesList" class="favorites-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Creado con ❤️ — Blog Deportivo</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
